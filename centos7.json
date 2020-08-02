@@ -64,6 +64,7 @@
 
             "content_library_destination" : {
                 "library":          "test",
+                "name":             "centos7-latest",
                 "destroy":          true
             }
         }
