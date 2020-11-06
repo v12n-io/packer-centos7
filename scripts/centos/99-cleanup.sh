@@ -23,6 +23,9 @@ sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
 # Clean cloud-init
 sudo cloud-init clean --logs --seed
 
+# Remove current SSHd keys
+rm -f /etc/ssh/ssh_host_*
+
 # Clear audit logs
 if [ -f /var/log/audit/audit.log ]; then
     sudo cat /dev/null > /var/log/audit/audit.log
