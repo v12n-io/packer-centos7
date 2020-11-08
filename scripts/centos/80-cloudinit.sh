@@ -10,7 +10,10 @@ sudo yum install -y cloud-init perl
 sudo touch /etc/cloud/cloud-init.disabled
 
 # Enable SSH password auth
-sed -i 's/^ssh_pwauth:   0/ssh_pwauth:   1/g' /etc/cloud/cloud.cfg
+sudo sed -i 's/^ssh_pwauth:   0/ssh_pwauth:   1/g' /etc/cloud/cloud.cfg
+
+# Remove user section
+sudo sed -i -e 1,3d /etc/cloud/cloud.cfg
 
 # Disable VMware customization to facilitate static IP address assignment
 sudo sed -i "s/^disable_vmware_customization: false/disable_vmware_customization: true/" /etc/cloud/cloud.cfg

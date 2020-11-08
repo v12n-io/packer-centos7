@@ -69,6 +69,7 @@
             "execute_command":      "echo '{{user `var_guest_password`}}' | sudo -S -E bash '{{.Path}}'",
             "scripts":              [
                                         "./scripts/centos/00-update.sh",
+                                        "./scripts/centos/05-repos.sh",
                                         "./scripts/centos/10-configure-sshd.sh",
                                         "./scripts/centos/20-ansibleuser.sh",
                                         "./scripts/centos/80-cloudinit.sh",
