@@ -83,7 +83,7 @@
     "post-processors": [
         {
             "type": "manifest",
-            "output": "centos7-output.json",
+            "output": "output.json",
             "strip_path": false
         }
     ]
