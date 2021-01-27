@@ -50,7 +50,7 @@ export LINUXUSER='nonrootuser'
 export LINUXPASS='C0mplexP@ssword'
 export WINDOWSPASS='C0mplexP@ssword'
 export BUILDVERSION='<insertdate>'
-export BUILDREPO='https://github.com/v12n-io/packer-centos8'
+export BUILDREPO='https://github.com/v12n-io/packer-centos7'
 export BUILDBRANCH='main'
 export HTTPSERVER='http://<webserver>'
 ```
